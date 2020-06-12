@@ -1,0 +1,85 @@
+@charset "UTF-8";
+body {
+  background: #ebebeb; }
+
+header {
+  margin-bottom: 100px; }
+
+h2 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+form {
+  background: #ffffff;
+  width: 100%;
+  padding: 20px 30px 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 18px 42px 10px #C6C6C6;
+  /*   .reset {
+  border: none;
+  background: $var2;
+} */ }
+  form .search {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px 10px 40px;
+    background: url(../img/icon-search.svg) no-repeat left 10px center #f4f4f4;
+    margin-bottom: 30px; }
+  form .clear {
+    cursor: pointer;
+    color: #000;
+    padding: 5px; }
+    form .clear::before {
+      content: "✓";
+      position: relative;
+      right: 3px; }
+    form .clear:hover {
+      text-decoration: none;
+      color: #000; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+  ul li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    color: #a2a2a2;
+    margin-right: 10px;
+    font-size: 13px; }
+    ul li a {
+      border-bottom: 1px dashed #a2a2a2;
+      color: #a2a2a2; }
+      ul li a:hover {
+        text-decoration: none;
+        color: #a2a2a2; }
+
+.active {
+  border-bottom: 1px dashed #000000;
+  color: #000000; }
+  .active:hover {
+    color: #000000; }
+
+.wrap {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px; }
+
+.table {
+  margin-bottom: 40px; }
+  .table tr {
+    border-bottom: 1px solid #dee2e6; }
+    .table tr th {
+      color: #a2a2a2;
+      border-top: none;
+      border-bottom: none; }
+    .table tr .user {
+      color: #00bfff;
+      font-weight: bold; }
+    .table tr .delete {
+      cursor: pointer; }
